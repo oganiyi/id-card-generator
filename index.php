@@ -156,7 +156,7 @@ if (array_key_exists('ninErr', $errors)) {
                     </select>
                 </div>
             </div>
-            <input type="submit" name="submit" value="Generate my ID" class="btn btn-success">
+            <input type="submit" name="submit" value="Generate my ID" class="btn btn-success mb-2">
         </form>
 
         <div id="displayCard" class="container mt-5" <?php if (isset($_POST['submit']) && $errors === array()) {
