@@ -1,0 +1,24 @@
+#idCard {
+  border: 1px solid black;
+  height: 450px;
+  background: slategray;
+  position: relative;
+}
+
+img {
+  max-height: 100px;
+}
+
+#content {
+  background-color: lightblue;
+  position: absolute;
+  border: 1px solid black;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+#displayCard {
+  display: none;
+}
