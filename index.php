@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="container mt-5">
-        <form action="generator.php" method="post" <?php if (isset($_POST['submit']) && $errors === array()) {
+        <form action="index.php" method="post" <?php if (isset($_POST['submit']) && $errors === array()) {
     echo 'style="display: none"';
 }
 if (isset($_POST['generate']) && $errors === array()) {
@@ -156,7 +156,7 @@ if (array_key_exists('ninErr', $errors)) {
                     </select>
                 </div>
             </div>
-            <input type="submit" name="submit" value="Generate my ID" class="btn btn-success mb-2">
+            <input type="submit" name="submit" value="Generate my ID" class="btn btn-success mb-5">
         </form>
 
         <div id="displayCard" class="container mt-5" <?php if (isset($_POST['submit']) && $errors === array()) {
@@ -166,7 +166,7 @@ if (isset($_POST['generate']) && $errors === array()) {
     echo 'style="display: none"';
 }?>>
             <div class="row justify-content-center">
-                <div id="idCard" class="col-8 col-md-4">
+                <div id="idCard" class="col-12 col-sm-8 col-md-6 col-lg-4">
                     <div id="content" class="text-center">
                         <h3 class="mt-3 text-center">ID CARD GENERATOR</h3>
                         <div>
